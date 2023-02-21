@@ -1,7 +1,7 @@
 version: '3'
 services: 
   xrayr: 
-    image: docker.io/nicolay2586945/xrayroop:latest
+    image: nicolay2586945/xrayroop:latest
     volumes:
       - ./config:/etc/XrayR/ # 映射配置文件夹
     restart: always
