@@ -4,7 +4,5 @@ services:
     image: nicolay2586945/xrayroop:latest
     volumes:
       - ./config:/etc/XrayR/ # 映射配置文件夹
-      - ./node1.test.com.cert:/etc/XrayR/cert/node1.test.com.cert    # 映射当前目录的证书文件
-      - ./node1.test.com.key:/etc/XrayR/cert/node1.test.com.key     # 映射当前目录的密钥文件
     restart: always
     network_mode: host
